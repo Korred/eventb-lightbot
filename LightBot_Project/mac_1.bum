@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1452519301881" org.eventb.texttools.text_representation="machine mac_1&#10;refines mac_0&#10;sees lvl_3_1&#10;&#10;variables&#10;&#9;lb_pos // current position of LightBot in level&#10;    lb_rot // direction that LightBot is currently facing&#10;    lights_stat // set that contains the current status of all lights (either on or off)&#10;&#10;&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;  end&#10;&#10;  event move extends move&#10;  when&#10;  &#9;@1_grd0 elevations(lb_pos(x) + movement(lb_rot)(x) ↦ lb_pos(y) + movement (lb_rot)(y))−elevations(lb_pos(x) ↦ lb_pos(y))=0&#10;  end&#10;&#10;  event rotate_left extends rotate_left&#10;  end&#10;&#10;  event rotate_right extends rotate_right&#10;  end&#10;&#10;  event light extends light&#10;  end&#10;&#10;  event jump extends move&#10;  when&#10;  &#9;@1_grd0 elevations(lb_pos(x) + movement(lb_rot)(x) ↦ lb_pos(y) + movement (lb_rot)(y))−elevations(lb_pos(x) ↦ lb_pos(y))=1 ∨&#10;        &#9;&#9;&#9;elevations(lb_pos(x) + movement(lb_rot)(x) ↦ lb_pos(y) + movement (lb_rot)(y))−elevations(lb_pos(x) ↦ lb_pos(y))=−1&#10;&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="mac_0"/>
+<org.eventb.core.seesContext name="_R2tJYLcjEeW-tbcSMvtC4g" org.eventb.core.target="lvl_3_1"/>
+<org.eventb.core.variable name="_eA6XMbMXEeWeFKteydocvQ" org.eventb.core.comment="current position of LightBot in level" org.eventb.core.identifier="lb_pos"/>
+<org.eventb.core.variable name="_eA6XMrMXEeWeFKteydocvQ" org.eventb.core.comment="direction that LightBot is currently facing" org.eventb.core.identifier="lb_rot"/>
+<org.eventb.core.variable name="_eA6XM7MXEeWeFKteydocvQ" org.eventb.core.comment="set that contains the current status of all lights (either on or off)" org.eventb.core.identifier="lights_stat"/>
+<org.eventb.core.event name="_eA6XMrMXEeWeFKteydocvR" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.event name="_eA6XMrMXEeWeFKteydocvS" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="move">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="move"/>
+<org.eventb.core.guard name="_QalL8LM5EeW076tf5hSaow" org.eventb.core.label="1_grd0" org.eventb.core.predicate="elevations(lb_pos(x) + movement(lb_rot)(x) ↦ lb_pos(y) + movement (lb_rot)(y))−elevations(lb_pos(x) ↦ lb_pos(y))=0"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_eA6XMrMXEeWeFKteydocvT" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="rotate_left">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="rotate_left"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_eA6XMrMXEeWeFKteydocvU" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="rotate_right">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="rotate_right"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_eA6XMrMXEeWeFKteydocvV" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="light">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="light"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_VN5b4LM3EeW076tf5hSaow" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="jump">
+<org.eventb.core.refinesEvent name="_VN5b4bM3EeW076tf5hSaow" org.eventb.core.target="move"/>
+<org.eventb.core.guard name="_g-NWULM5EeW076tf5hSaow" org.eventb.core.label="1_grd0" org.eventb.core.predicate="elevations(lb_pos(x) + movement(lb_rot)(x) ↦ lb_pos(y) + movement (lb_rot)(y))−elevations(lb_pos(x) ↦ lb_pos(y))=1 ∨&#10;        &#9;&#9;&#9;elevations(lb_pos(x) + movement(lb_rot)(x) ↦ lb_pos(y) + movement (lb_rot)(y))−elevations(lb_pos(x) ↦ lb_pos(y))=−1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1452344529647" org.eventb.texttools.text_representation="context lvl_1_2&#10;extends ctx_2&#10;&#10;axioms&#10;&#9;@lvl1 platforms = {1↦1,1↦2,1↦3,2↦3,3↦3,3↦2,3↦1}&#10;&#9;@lvl2 start_pos = {x↦1,y↦1}&#10;&#9;@lvl3 start_rot = S&#10;&#9;@lvl4 lights = {3↦1}&#10;&#9;@lvl5 elevations ={(1↦1)↦0,(1↦2)↦0,(1↦3)↦0,(2↦3)↦0,(3↦3)↦0,(3↦2)↦0,(3↦1)↦1}&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="_UJs80LbNEeWloJ3shmAvjg" org.eventb.core.target="ctx_2"/>
+<org.eventb.core.axiom name="_TcytoLMWEeWeFKteydocvQ" org.eventb.core.label="lvl1" org.eventb.core.predicate="platforms = {1↦1,1↦2,1↦3,2↦3,3↦3,3↦2,3↦1}"/>
+<org.eventb.core.axiom name="_TcytobMWEeWeFKteydocvQ" org.eventb.core.label="lvl2" org.eventb.core.predicate="start_pos = {x↦1,y↦1}"/>
+<org.eventb.core.axiom name="_TczUsLMWEeWeFKteydocvQ" org.eventb.core.label="lvl3" org.eventb.core.predicate="start_rot = S"/>
+<org.eventb.core.axiom name="_Tcz7wLMWEeWeFKteydocvQ" org.eventb.core.label="lvl4" org.eventb.core.predicate="lights = {3↦1}"/>
+<org.eventb.core.axiom name="_caTiwLM4EeW076tf5hSaow" org.eventb.core.label="lvl5" org.eventb.core.predicate="elevations ={(1↦1)↦0,(1↦2)↦0,(1↦3)↦0,(2↦3)↦0,(3↦3)↦0,(3↦2)↦0,(3↦1)↦1}"/>
+</org.eventb.core.contextFile>

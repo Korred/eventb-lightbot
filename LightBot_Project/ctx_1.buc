@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1451948904727" org.eventb.texttools.text_representation="context ctx_1&#10;extends ctx_0&#10;&#10;constants&#10;&#9;elevations&#10;&#10;axioms&#10;&#9;@axm11 elevations ∈ platforms → ℕ&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="ctx_0"/>
+<org.eventb.core.constant name="_DnzScLM4EeW076tf5hSaow" org.eventb.core.identifier="elevations"/>
+<org.eventb.core.axiom name="_DnzScbM4EeW076tf5hSaow" org.eventb.core.label="axm11" org.eventb.core.predicate="elevations ∈ platforms → ℕ"/>
+</org.eventb.core.contextFile>

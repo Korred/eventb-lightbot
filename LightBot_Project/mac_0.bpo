@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="coord_lables" org.eventb.core.type="ℙ(coord_lables)"/>
+<org.eventb.core.poIdentifier name="dir_lables" org.eventb.core.type="ℙ(dir_lables)"/>
+<org.eventb.core.poIdentifier name="rot_lables" org.eventb.core.type="ℙ(rot_lables)"/>
+<org.eventb.core.poIdentifier name="E" org.eventb.core.type="dir_lables"/>
+<org.eventb.core.poIdentifier name="N" org.eventb.core.type="dir_lables"/>
+<org.eventb.core.poIdentifier name="S" org.eventb.core.type="dir_lables"/>
+<org.eventb.core.poIdentifier name="W" org.eventb.core.type="dir_lables"/>
+<org.eventb.core.poIdentifier name="left" org.eventb.core.type="rot_lables"/>
+<org.eventb.core.poIdentifier name="lights" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="movement" org.eventb.core.type="ℙ(dir_lables×ℙ(coord_lables×ℤ))"/>
+<org.eventb.core.poIdentifier name="platforms" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="right" org.eventb.core.type="rot_lables"/>
+<org.eventb.core.poIdentifier name="rotations" org.eventb.core.type="ℙ(dir_lables×rot_lables×dir_lables)"/>
+<org.eventb.core.poIdentifier name="start_pos" org.eventb.core.type="ℙ(coord_lables×ℤ)"/>
+<org.eventb.core.poIdentifier name="start_rot" org.eventb.core.type="dir_lables"/>
+<org.eventb.core.poIdentifier name="x" org.eventb.core.type="coord_lables"/>
+<org.eventb.core.poIdentifier name="y" org.eventb.core.type="coord_lables"/>
+<org.eventb.core.poPredicate name="coord_lablet" org.eventb.core.predicate="platforms⊆ℕ1 × ℕ1" org.eventb.core.source="/LightBot_Project/ctx_0.buc|org.eventb.core.contextFile#ctx_0|org.eventb.core.axiom#_DiMy1LMOEeWeFKteydocvQ"/>
+<org.eventb.core.poPredicate name="coord_lableu" org.eventb.core.predicate="lights⊆ℕ1 × ℕ1" org.eventb.core.source="/LightBot_Project/ctx_0.buc|org.eventb.core.contextFile#ctx_0|org.eventb.core.axiom#_aLukcLMOEeWeFKteydocvQ"/>
+<org.eventb.core.poPredicate name="coord_lablev" org.eventb.core.predicate="lights⊆platforms" org.eventb.core.source="/LightBot_Project/ctx_0.buc|org.eventb.core.contextFile#ctx_0|org.eventb.core.axiom#_aLukcbMOEeWeFKteydocvQ"/>
+<org.eventb.core.poPredicate name="coord_lablew" org.eventb.core.predicate="partition(coord_lables,{x},{y})" org.eventb.core.source="/LightBot_Project/ctx_0.buc|org.eventb.core.contextFile#ctx_0|org.eventb.core.axiom#_OMAYM7MQEeWeFKteydocvQ"/>
+<org.eventb.core.poPredicate name="coord_lablex" org.eventb.core.predicate="start_pos∈coord_lables → ℕ1" org.eventb.core.source="/LightBot_Project/ctx_0.buc|org.eventb.core.contextFile#ctx_0|org.eventb.core.axiom#_pkVbQLMQEeWeFKteydocvQ"/>
+<org.eventb.core.poPredicate name="coord_labley" org.eventb.core.predicate="start_pos(x) ↦ start_pos(y)∈platforms" org.eventb.core.source="/LightBot_Project/ctx_0.buc|org.eventb.core.contextFile#ctx_0|org.eventb.core.axiom#_4XMLkLMQEeWeFKteydocvQ"/>
+<org.eventb.core.poPredicate name="coord_lablez" org.eventb.core.predicate="partition(dir_lables,{N},{E},{S},{W})" org.eventb.core.source="/LightBot_Project/ctx_0.buc|org.eventb.core.contextFile#ctx_0|org.eventb.core.axiom#_7i4PBbMREeWeFKteydocvQ"/>
+<org.eventb.core.poPredicate name="coord_lable{" org.eventb.core.predicate="start_rot∈dir_lables" org.eventb.core.source="/LightBot_Project/ctx_0.buc|org.eventb.core.contextFile#ctx_0|org.eventb.core.axiom#_7i4PBrMREeWeFKteydocvQ"/>
+<org.eventb.core.poPredicate name="coord_lable|" org.eventb.core.predicate="movement={N ↦ {x ↦ 0,y ↦ −1},E ↦ {x ↦ 1,y ↦ 0},S ↦ {x ↦ 0,y ↦ 1},W ↦ {x ↦ −1,y ↦ 0}}" org.eventb.core.source="/LightBot_Project/ctx_0.buc|org.eventb.core.contextFile#ctx_0|org.eventb.core.axiom#_3dc1QbMSEeWeFKteydocvQ"/>
+<org.eventb.core.poPredicate name="coord_lable}" org.eventb.core.predicate="partition(rot_lables,{left},{right})" org.eventb.core.source="/LightBot_Project/ctx_0.buc|org.eventb.core.contextFile#ctx_0|org.eventb.core.axiom#_aT7D4rMeEeWeFKteydocvQ"/>
+<org.eventb.core.poPredicate name="coord_lable~" org.eventb.core.predicate="rotations={N ↦ left ↦ W,N ↦ right ↦ E,E ↦ left ↦ N,E ↦ right ↦ S,S ↦ left ↦ E,S ↦ right ↦ W,W ↦ left ↦ S,W ↦ right ↦ N}" org.eventb.core.source="/LightBot_Project/ctx_0.buc|org.eventb.core.contextFile#ctx_0|org.eventb.core.axiom#_MAu1orMfEeWeFKteydocvQ"/>
+<org.eventb.core.poIdentifier name="elevations" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+<org.eventb.core.poPredicate name="coord_lablf'" org.eventb.core.predicate="elevations∈platforms → ℕ" org.eventb.core.source="/LightBot_Project/ctx_1.buc|org.eventb.core.contextFile#ctx_1|org.eventb.core.axiom#_DnzScbM4EeW076tf5hSaow"/>
+<org.eventb.core.poIdentifier name="commands" org.eventb.core.type="ℙ(commands)"/>
+<org.eventb.core.poIdentifier name="stack_lables" org.eventb.core.type="ℙ(stack_lables)"/>
+<org.eventb.core.poIdentifier name="cmd" org.eventb.core.type="stack_lables"/>
+<org.eventb.core.poIdentifier name="jump_c" org.eventb.core.type="commands"/>
+<org.eventb.core.poIdentifier name="left_c" org.eventb.core.type="commands"/>
+<org.eventb.core.poIdentifier name="level_commands" org.eventb.core.type="ℙ(commands)"/>
+<org.eventb.core.poIdentifier name="light_c" org.eventb.core.type="commands"/>
+<org.eventb.core.poIdentifier name="move_c" org.eventb.core.type="commands"/>
+<org.eventb.core.poIdentifier name="proc1_c" org.eventb.core.type="commands"/>
+<org.eventb.core.poIdentifier name="proc2_c" org.eventb.core.type="commands"/>
+<org.eventb.core.poIdentifier name="proc_length" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="proc_number" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="prog" org.eventb.core.type="stack_lables"/>
+<org.eventb.core.poIdentifier name="right_c" org.eventb.core.type="commands"/>
+<org.eventb.core.poPredicate name="level_commandt" org.eventb.core.predicate="partition(commands,{move_c},{left_c},{right_c},{light_c},{jump_c},{proc1_c},{proc2_c})" org.eventb.core.source="/LightBot_Project/ctx_2.buc|org.eventb.core.contextFile#ctx_2|org.eventb.core.axiom#_Gkj5q7bJEeW_oKQtUNjX5Q"/>
+<org.eventb.core.poPredicate name="level_commandu" org.eventb.core.predicate="level_commands⊆commands" org.eventb.core.source="/LightBot_Project/ctx_2.buc|org.eventb.core.contextFile#ctx_2|org.eventb.core.axiom#_Gkj5rLbJEeW_oKQtUNjX5Q"/>
+<org.eventb.core.poPredicate name="level_commandv" org.eventb.core.predicate="proc_number∈1 ‥ 3" org.eventb.core.source="/LightBot_Project/ctx_2.buc|org.eventb.core.contextFile#ctx_2|org.eventb.core.axiom#_Gkj5rbbJEeW_oKQtUNjX5Q"/>
+<org.eventb.core.poPredicate name="level_commandw" org.eventb.core.predicate="proc_length∈1 ‥ proc_number → ℕ1" org.eventb.core.source="/LightBot_Project/ctx_2.buc|org.eventb.core.contextFile#ctx_2|org.eventb.core.axiom#_Gkj5rrbJEeW_oKQtUNjX5Q"/>
+<org.eventb.core.poPredicate name="level_commandx" org.eventb.core.predicate="proc_number=2⇒proc1_c∈level_commands" org.eventb.core.source="/LightBot_Project/ctx_2.buc|org.eventb.core.contextFile#ctx_2|org.eventb.core.axiom#_7vbI0LbYEeWW-cvop4Rghw"/>
+<org.eventb.core.poPredicate name="level_commandy" org.eventb.core.predicate="proc_number=3⇒{proc1_c,proc2_c}⊆level_commands" org.eventb.core.source="/LightBot_Project/ctx_2.buc|org.eventb.core.contextFile#ctx_2|org.eventb.core.axiom#_UzHPwLbZEeWW-cvop4Rghw"/>
+<org.eventb.core.poPredicate name="level_commandz" org.eventb.core.predicate="proc1_c∈level_commands⇒proc_number&gt;1" org.eventb.core.source="/LightBot_Project/ctx_2.buc|org.eventb.core.contextFile#ctx_2|org.eventb.core.axiom#_6vti0LbZEeWW-cvop4Rghw"/>
+<org.eventb.core.poPredicate name="level_command{" org.eventb.core.predicate="proc2_c∈level_commands⇒proc_number&gt;2" org.eventb.core.source="/LightBot_Project/ctx_2.buc|org.eventb.core.contextFile#ctx_2|org.eventb.core.axiom#_6vti0bbZEeWW-cvop4Rghw"/>
+<org.eventb.core.poPredicate name="level_command|" org.eventb.core.predicate="partition(stack_lables,{prog},{cmd})" org.eventb.core.source="/LightBot_Project/ctx_2.buc|org.eventb.core.contextFile#ctx_2|org.eventb.core.axiom#_6pcJo7cDEeWqgZYF5piVcw"/>
+<org.eventb.core.poPredicate name="level_command}" org.eventb.core.predicate="platforms={1 ↦ 1,2 ↦ 1,3 ↦ 1,4 ↦ 1,5 ↦ 1,6 ↦ 1,7 ↦ 1,1 ↦ 2,2 ↦ 2,3 ↦ 2,4 ↦ 2,5 ↦ 2,6 ↦ 2,7 ↦ 2,1 ↦ 3,2 ↦ 3,3 ↦ 3,4 ↦ 3,5 ↦ 3,6 ↦ 3,7 ↦ 3}" org.eventb.core.source="/LightBot_Project/lvl_3_1.buc|org.eventb.core.contextFile#lvl_3_1|org.eventb.core.axiom#_IYdtULcjEeW-tbcSMvtC4g"/>
+<org.eventb.core.poPredicate name="level_command~" org.eventb.core.predicate="start_pos={x ↦ 1,y ↦ 2}" org.eventb.core.source="/LightBot_Project/lvl_3_1.buc|org.eventb.core.contextFile#lvl_3_1|org.eventb.core.axiom#_IYdtUbcjEeW-tbcSMvtC4g"/>
+<org.eventb.core.poPredicate name="level_commane'" org.eventb.core.predicate="start_rot=E" org.eventb.core.source="/LightBot_Project/lvl_3_1.buc|org.eventb.core.contextFile#lvl_3_1|org.eventb.core.axiom#_IYdtUrcjEeW-tbcSMvtC4g"/>
+<org.eventb.core.poPredicate name="level_commane(" org.eventb.core.predicate="lights={2 ↦ 2,3 ↦ 2,4 ↦ 2,5 ↦ 2,6 ↦ 2,7 ↦ 2}" org.eventb.core.source="/LightBot_Project/lvl_3_1.buc|org.eventb.core.contextFile#lvl_3_1|org.eventb.core.axiom#_IYdtU7cjEeW-tbcSMvtC4g"/>
+<org.eventb.core.poPredicate name="level_commane)" org.eventb.core.predicate="elevations={1 ↦ 1 ↦ 0,2 ↦ 1 ↦ 0,3 ↦ 1 ↦ 0,4 ↦ 1 ↦ 0,5 ↦ 1 ↦ 0,6 ↦ 1 ↦ 0,7 ↦ 1 ↦ 0,1 ↦ 2 ↦ 1,2 ↦ 2 ↦ 1,3 ↦ 2 ↦ 1,4 ↦ 2 ↦ 1,5 ↦ 2 ↦ 1,6 ↦ 2 ↦ 1,7 ↦ 2 ↦ 1,1 ↦ 3 ↦ 0,2 ↦ 3 ↦ 0,3 ↦ 3 ↦ 0,4 ↦ 3 ↦ 0,5 ↦ 3 ↦ 0,6 ↦ 3 ↦ 0,7 ↦ 3 ↦ 0}" org.eventb.core.source="/LightBot_Project/lvl_3_1.buc|org.eventb.core.contextFile#lvl_3_1|org.eventb.core.axiom#_IYdtVLcjEeW-tbcSMvtC4g"/>
+<org.eventb.core.poPredicate name="level_commane*" org.eventb.core.predicate="level_commands={move_c,left_c,right_c,light_c,jump_c,proc1_c}" org.eventb.core.source="/LightBot_Project/lvl_3_1.buc|org.eventb.core.contextFile#lvl_3_1|org.eventb.core.axiom#_IYdtVbcjEeW-tbcSMvtC4g"/>
+<org.eventb.core.poPredicate name="level_commane+" org.eventb.core.predicate="proc_number=2" org.eventb.core.source="/LightBot_Project/lvl_3_1.buc|org.eventb.core.contextFile#lvl_3_1|org.eventb.core.axiom#_IYdtVrcjEeW-tbcSMvtC4g"/>
+<org.eventb.core.poPredicate name="level_commane," org.eventb.core.predicate="proc_length={1 ↦ 1,2 ↦ 3}" org.eventb.core.source="/LightBot_Project/lvl_3_1.buc|org.eventb.core.contextFile#lvl_3_1|org.eventb.core.axiom#_IYdtV7cjEeW-tbcSMvtC4g"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="lb_pos" org.eventb.core.type="ℙ(coord_lables×ℤ)"/>
+<org.eventb.core.poIdentifier name="lb_rot" org.eventb.core.type="dir_lables"/>
+<org.eventb.core.poIdentifier name="lights_stat" org.eventb.core.type="ℙ(ℤ×ℤ×BOOL)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="0_inv1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#HYPlvl_3_2"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="x∈dom(lb_pos)∧lb_pos∈coord_lables ⇸ ℤ∧y∈dom(lb_pos)" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_eA6XNbMXEeWeFKteydocvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_eA6XNbMXEeWeFKteydocvQ"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#HYPlvl_3_2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/0_inv0/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stau"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{x ↦ start_pos(x),y ↦ start_pos(y)}∈coord_lables → ℕ1" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_eA6XNLMXEeWeFKteydocvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_eA6XNLMXEeWeFKteydocvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poSequent#INITIALISATION\/0_inv0\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#HYPlvl_3_2|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/0_inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stau"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{x ↦ start_pos(x),y ↦ start_pos(y)}(x) ↦ {x ↦ start_pos(x),y ↦ start_pos(y)}(y)∈platforms" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_eA6XNbMXEeWeFKteydocvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_eA6XNbMXEeWeFKteydocvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poSequent#INITIALISATION\/0_inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/0_inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stau"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(λlight⦂ℤ×ℤ·light∈lights ∣ FALSE)∈lights → {TRUE,FALSE}" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_k9yX0LMZEeWeFKteydocvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_k9yX0LMZEeWeFKteydocvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poSequent#INITIALISATION\/0_inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/validation/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stau"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∃a⦂ℤ,b⦂ℤ,c⦂BOOL·a ↦ b ↦ c∈(λlight⦂ℤ×ℤ·light∈lights ∣ FALSE)∧c=FALSE" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_kzsBkMTpEeWlII6dh6jkRw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_kzsBkMTpEeWlII6dh6jkRw"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poSequent#INITIALISATION\/validation\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/0_init_pos/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stau"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="x∈dom(start_pos)∧start_pos∈coord_lables ⇸ ℤ∧y∈dom(start_pos)" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#'|org.eventb.core.action#_4Q7ccLMZEeWeFKteydocvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#'|org.eventb.core.action#_4Q7ccLMZEeWeFKteydocvQ"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stau"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlights_stau" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="lb_pos'" org.eventb.core.type="ℙ(coord_lables×ℤ)"/>
+<org.eventb.core.poIdentifier name="lights_stat'" org.eventb.core.type="ℙ(ℤ×ℤ×BOOL)"/>
+<org.eventb.core.poIdentifier name="lb_rot'" org.eventb.core.type="dir_lables"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlights_stau" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTIDENTlights_stau" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="move/0_grd0/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTIDENTlights_stav"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="x∈dom(lb_pos)∧lb_pos∈coord_lables ⇸ ℤ∧lb_rot∈dom(movement)∧movement∈dir_lables ⇸ ℙ(coord_lables × ℤ)∧x∈dom(movement(lb_rot))∧movement(lb_rot)∈coord_lables ⇸ ℤ∧y∈dom(lb_pos)∧y∈dom(movement(lb_rot))" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZTQwLMbEeWeFKteydocvQ|org.eventb.core.guard#_PZT307MbEeWeFKteydocvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZTQwLMbEeWeFKteydocvQ|org.eventb.core.guard#_PZT307MbEeWeFKteydocvQ"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTIDENTlights_stav"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="move/0_inv0/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stav"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{x ↦ lb_pos(x)+movement(lb_rot)(x),y ↦ lb_pos(y)+movement(lb_rot)(y)}∈coord_lables → ℕ1" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_eA6XNLMXEeWeFKteydocvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZTQwLMbEeWeFKteydocvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_eA6XNLMXEeWeFKteydocvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poSequent#move\/0_inv0\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#HYPlvl_3_2|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="move/0_inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stav"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{x ↦ lb_pos(x)+movement(lb_rot)(x),y ↦ lb_pos(y)+movement(lb_rot)(y)}(x) ↦ {x ↦ lb_pos(x)+movement(lb_rot)(x),y ↦ lb_pos(y)+movement(lb_rot)(y)}(y)∈platforms" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_eA6XNbMXEeWeFKteydocvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZTQwLMbEeWeFKteydocvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_eA6XNbMXEeWeFKteydocvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poSequent#move\/0_inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="move/0_act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stav"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="x∈dom(lb_pos)∧lb_pos∈coord_lables ⇸ ℤ∧lb_rot∈dom(movement)∧movement∈dir_lables ⇸ ℙ(coord_lables × ℤ)∧x∈dom(movement(lb_rot))∧movement(lb_rot)∈coord_lables ⇸ ℤ∧y∈dom(lb_pos)∧y∈dom(movement(lb_rot))" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZTQwLMbEeWeFKteydocvQ|org.eventb.core.action#_PZT31LMbEeWeFKteydocvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZTQwLMbEeWeFKteydocvQ|org.eventb.core.action#_PZT31LMbEeWeFKteydocvQ"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stav"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlights_stav" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="lb_pos'" org.eventb.core.type="ℙ(coord_lables×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlights_stav" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTIDENTlights_stav" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="lb_pos(x)+movement(lb_rot)(x) ↦ lb_pos(y)+movement(lb_rot)(y)∈platforms" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZTQwLMbEeWeFKteydocvQ|org.eventb.core.guard#_PZT307MbEeWeFKteydocvQ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="rotate_left/0_act0/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_staw"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lb_rot ↦ left∈dom(rotations)∧rotations∈dir_lables × rot_lables ⇸ dir_lables" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZT30LMbEeWeFKteydocvQ|org.eventb.core.action#_5B4wkLMfEeWpRLF7-r5f_g"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZT30LMbEeWeFKteydocvQ|org.eventb.core.action#_5B4wkLMfEeWpRLF7-r5f_g"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_staw"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlights_staw" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="lb_rot'" org.eventb.core.type="dir_lables"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlights_staw" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTIDENTlights_staw" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="rotate_right/0_act0/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stax"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lb_rot ↦ right∈dom(rotations)∧rotations∈dir_lables × rot_lables ⇸ dir_lables" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZT30bMbEeWeFKteydocvQ|org.eventb.core.action#_7XjncLMfEeWpRLF7-r5f_g"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZT30bMbEeWeFKteydocvQ|org.eventb.core.action#_7XjncLMfEeWpRLF7-r5f_g"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stax"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlights_stax" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="lb_rot'" org.eventb.core.type="dir_lables"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlights_stax" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTIDENTlights_stax" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="light/0_grd0/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTIDENTlights_stay"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="x∈dom(lb_pos)∧lb_pos∈coord_lables ⇸ ℤ∧y∈dom(lb_pos)" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZT30rMbEeWeFKteydocvQ|org.eventb.core.guard#_2hUJ4LMiEeWpRLF7-r5f_g"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZT30rMbEeWeFKteydocvQ|org.eventb.core.guard#_2hUJ4LMiEeWpRLF7-r5f_g"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTIDENTlights_stay"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="light/0_grd1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTHYPlights_stay'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="x∈dom(lb_pos)∧lb_pos∈coord_lables ⇸ ℤ∧y∈dom(lb_pos)" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZT30rMbEeWeFKteydocvQ|org.eventb.core.guard#_SGXu8LbUEeWPAZ7lk81xPQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZT30rMbEeWeFKteydocvQ|org.eventb.core.guard#_SGXu8LbUEeWPAZ7lk81xPQ"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTHYPlights_stay'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="light/0_inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stay"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lights_stat{lb_pos(x) ↦ lb_pos(y) ↦ bool(lights_stat(lb_pos(x) ↦ lb_pos(y))≠TRUE)}∈lights → {TRUE,FALSE}" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_k9yX0LMZEeWeFKteydocvQ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZT30rMbEeWeFKteydocvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_k9yX0LMZEeWeFKteydocvQ"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poSequent#light\/0_inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="light/validation/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stay"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∃a⦂ℤ,b⦂ℤ,c⦂BOOL·a ↦ b ↦ c∈lights_stat{lb_pos(x) ↦ lb_pos(y) ↦ bool(lights_stat(lb_pos(x) ↦ lb_pos(y))≠TRUE)}∧c=FALSE" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_kzsBkMTpEeWlII6dh6jkRw"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZT30rMbEeWeFKteydocvQ"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_kzsBkMTpEeWlII6dh6jkRw"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poSequent#light\/validation\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="light/0_act0/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stay"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="x∈dom(lb_pos)∧lb_pos∈coord_lables ⇸ ℤ∧y∈dom(lb_pos)∧lb_pos(x) ↦ lb_pos(y)∈dom(lights_stat)∧lights_stat∈ℤ × ℤ ⇸ BOOL" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZT30rMbEeWeFKteydocvQ|org.eventb.core.action#_2hUJ4bMiEeWpRLF7-r5f_g"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZT30rMbEeWeFKteydocvQ|org.eventb.core.action#_2hUJ4bMiEeWpRLF7-r5f_g"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTALLHYPlights_stay"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlights_stay" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="lights_stat'" org.eventb.core.type="ℙ(ℤ×ℤ×BOOL)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPlights_stay'" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTIDENTlights_stay" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="lb_pos(x) ↦ lb_pos(y)∈lights" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZT30rMbEeWeFKteydocvQ|org.eventb.core.guard#_2hUJ4LMiEeWpRLF7-r5f_g"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlights_stay" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#EVTHYPlights_stay'" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="lb_pos(x) ↦ lb_pos(y)∈dom(lights_stat)" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.event#_PZT30rMbEeWeFKteydocvQ|org.eventb.core.guard#_SGXu8LbUEeWPAZ7lk81xPQ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPlvl_3_2" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="lb_pos∈coord_lables → ℕ1" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_eA6XNLMXEeWeFKteydocvQ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/LightBot_Project/mac_0.bpo|org.eventb.core.poFile#mac_0|org.eventb.core.poPredicateSet#HYPlvl_3_2" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="lb_pos(x) ↦ lb_pos(y)∈platforms" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_eA6XNbMXEeWeFKteydocvQ"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="lb_rot∈dir_lables" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_k9xwwLMZEeWeFKteydocvQ"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="lights_stat∈lights → {TRUE,FALSE}" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_k9yX0LMZEeWeFKteydocvQ"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="∃a⦂ℤ,b⦂ℤ,c⦂BOOL·a ↦ b ↦ c∈lights_stat∧c=FALSE" org.eventb.core.source="/LightBot_Project/mac_0.bum|org.eventb.core.machineFile#mac_0|org.eventb.core.invariant#_kzsBkMTpEeWlII6dh6jkRw"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

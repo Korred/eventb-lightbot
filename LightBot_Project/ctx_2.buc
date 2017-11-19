@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1452382484662" org.eventb.texttools.text_representation="context ctx_2&#10;extends ctx_1&#10;&#10;sets&#10;&#9;commands&#10;&#9;stack_lables&#10;&#10;constants&#10;&#9;level_commands&#10;&#9;move_c&#10;&#9;left_c&#10;&#9;right_c&#10;&#9;light_c&#10;&#9;jump_c&#10;&#9;proc1_c&#10;&#9;proc2_c&#10;&#9;proc_number proc_length&#10;&#9;prog cmd&#10;&#10;axioms&#10;&#9;@axm12 partition(commands,{move_c},{left_c},{right_c},{light_c},{jump_c},{proc1_c},{proc2_c})&#10;&#9;@axm13 level_commands ⊆commands&#10;&#9;@axm14 proc_number ∈ 1‥3&#10;&#9;@axm15 proc_length ∈1‥proc_number →ℕ1&#10;&#10;&#9;@axm16 proc_number = 2 ⇒ proc1_c ∈ level_commands &#9;&#9;&#9;&#9;&#9;&#9;//additional axioms to make sure that a LEVEL that extends this context will be valid&#10;&#9;@axm17 proc_number = 3 ⇒  {proc1_c,proc2_c} ⊆ level_commands &#9;//which basically means that creating a level with bad level_commands+proc_number combination will result in an error that&#10;&#9;@axm18 proc1_c ∈ level_commands ⇒ proc_number &gt; 1&#9;&#9;&#9;&#9;&#9;&#9;//no constants could be found that would satisfy the given axioms - so.. create valid levels ;)&#10;&#9;@axm19 proc2_c ∈ level_commands ⇒ proc_number &gt; 2&#10;&#10;&#9;@axm20 partition(stack_lables,{prog},{cmd})&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="ctx_1"/>
+<org.eventb.core.carrierSet name="_Gkj5oLbJEeW_oKQtUNjX5Q" org.eventb.core.identifier="commands"/>
+<org.eventb.core.constant name="_Gkj5obbJEeW_oKQtUNjX5Q" org.eventb.core.identifier="level_commands"/>
+<org.eventb.core.constant name="_Gkj5orbJEeW_oKQtUNjX5Q" org.eventb.core.identifier="move_c"/>
+<org.eventb.core.constant name="_Gkj5o7bJEeW_oKQtUNjX5Q" org.eventb.core.identifier="left_c"/>
+<org.eventb.core.constant name="_Gkj5pLbJEeW_oKQtUNjX5Q" org.eventb.core.identifier="right_c"/>
+<org.eventb.core.constant name="_Gkj5pbbJEeW_oKQtUNjX5Q" org.eventb.core.identifier="light_c"/>
+<org.eventb.core.constant name="_Gkj5prbJEeW_oKQtUNjX5Q" org.eventb.core.identifier="jump_c"/>
+<org.eventb.core.constant name="_Gkj5p7bJEeW_oKQtUNjX5Q" org.eventb.core.identifier="proc1_c"/>
+<org.eventb.core.constant name="_Gkj5qLbJEeW_oKQtUNjX5Q" org.eventb.core.identifier="proc2_c"/>
+<org.eventb.core.constant name="_Gkj5qbbJEeW_oKQtUNjX5Q" org.eventb.core.identifier="proc_number"/>
+<org.eventb.core.constant name="_Gkj5qrbJEeW_oKQtUNjX5Q" org.eventb.core.identifier="proc_length"/>
+<org.eventb.core.axiom name="_Gkj5q7bJEeW_oKQtUNjX5Q" org.eventb.core.label="axm12" org.eventb.core.predicate="partition(commands,{move_c},{left_c},{right_c},{light_c},{jump_c},{proc1_c},{proc2_c})"/>
+<org.eventb.core.axiom name="_Gkj5rLbJEeW_oKQtUNjX5Q" org.eventb.core.label="axm13" org.eventb.core.predicate="level_commands ⊆commands"/>
+<org.eventb.core.axiom name="_Gkj5rbbJEeW_oKQtUNjX5Q" org.eventb.core.label="axm14" org.eventb.core.predicate="proc_number ∈ 1‥3"/>
+<org.eventb.core.axiom name="_Gkj5rrbJEeW_oKQtUNjX5Q" org.eventb.core.label="axm15" org.eventb.core.predicate="proc_length ∈1‥proc_number →ℕ1"/>
+<org.eventb.core.axiom name="_7vbI0LbYEeWW-cvop4Rghw" org.eventb.core.comment="additional axioms to make sure that a LEVEL that extends this context will be valid" org.eventb.core.label="axm16" org.eventb.core.predicate="proc_number = 2 ⇒ proc1_c ∈ level_commands"/>
+<org.eventb.core.axiom name="_UzHPwLbZEeWW-cvop4Rghw" org.eventb.core.comment="which basically means that creating a level with bad level_commands+proc_number combination will result in an error that" org.eventb.core.label="axm17" org.eventb.core.predicate="proc_number = 3 ⇒  {proc1_c,proc2_c} ⊆ level_commands"/>
+<org.eventb.core.axiom name="_6vti0LbZEeWW-cvop4Rghw" org.eventb.core.comment="no constants could be found that would satisfy the given axioms - so.. create valid levels ;)" org.eventb.core.label="axm18" org.eventb.core.predicate="proc1_c ∈ level_commands ⇒ proc_number &gt; 1"/>
+<org.eventb.core.axiom name="_6vti0bbZEeWW-cvop4Rghw" org.eventb.core.label="axm19" org.eventb.core.predicate="proc2_c ∈ level_commands ⇒ proc_number &gt; 2"/>
+<org.eventb.core.carrierSet name="_6pcJoLcDEeWqgZYF5piVcw" org.eventb.core.identifier="stack_lables"/>
+<org.eventb.core.constant name="_6pcJobcDEeWqgZYF5piVcw" org.eventb.core.identifier="prog"/>
+<org.eventb.core.constant name="_6pcJorcDEeWqgZYF5piVcw" org.eventb.core.identifier="cmd"/>
+<org.eventb.core.axiom name="_6pcJo7cDEeWqgZYF5piVcw" org.eventb.core.label="axm20" org.eventb.core.predicate="partition(stack_lables,{prog},{cmd})"/>
+</org.eventb.core.contextFile>

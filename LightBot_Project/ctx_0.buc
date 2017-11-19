@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1453597904887" org.eventb.texttools.text_representation="context ctx_0&#10;&#10;sets&#10;&#9;coord_lables //set for coordinates labels &quot;x&quot; and &quot;y&quot;&#10;&#9;dir_lables //set for direction lables &quot;N&quot;,&quot;O&quot;,&quot;S&quot; and &quot;W&quot;&#10;&#9;rot_lables //set for rotation labels &quot;left&quot; and &quot;right&quot;&#10;constants&#10;&#9;platforms&#10;&#9;start_pos&#10;&#9;start_rot&#10;&#9;lights&#10;&#9;x y&#10;&#9;N E S W&#10;&#9;movement //set that contains information on how to move based on the current direction&#10;&#9;left right&#10;&#9;rotations//set that contains information on how to rorate based on the current direction&#10;&#10;axioms&#10;&#9;@axm0 platforms ⊆ℕ1×ℕ1&#10;&#9;@axm1 lights ⊆ℕ1×ℕ1&#10;&#9;@axm2 lights ⊆ platforms&#10;&#10;&#9;@axm3 partition(coord_lables,{x},{y})&#10;&#9;@axm4 start_pos ∈ coord_lables → ℕ1 //this will simplfy the means of checking x and y coordinates (no use of dom/ran or any other operators that creates POs)&#10;&#9;@axm5 start_pos(x) ↦ start_pos(y) ∈ platforms&#10;&#10;&#9;@axm6 partition(dir_lables,{N},{E},{S},{W})&#10;&#9;@axm7 start_rot ∈ dir_lables&#10;&#10;&#9;@axm8 movement = {N↦{x↦0,y↦−1}, E↦{x↦1,y↦0}, S↦{x↦0,y↦1}, W↦{x↦−1,y↦0}} //based on the current direction add values to current x,y position for moving&#10;&#10;&#9;@axm9 partition(rot_lables,{left},{right})&#10;&#9;@axm10 rotations ={(N↦left)↦W,(N↦right)↦E,(E↦left)↦N,(E↦right)↦S,(S↦left)↦E,(S↦right)↦W,(W↦left)↦S,(W↦right)↦N}&#10;&#10;end&#10;" version="3">
+<org.eventb.core.constant name="_DiMy0LMOEeWeFKteydocvQ" org.eventb.core.identifier="platforms"/>
+<org.eventb.core.constant name="_DiMy0bMOEeWeFKteydocvQ" org.eventb.core.identifier="start_pos"/>
+<org.eventb.core.constant name="_DiMy0rMOEeWeFKteydocvQ" org.eventb.core.identifier="start_rot"/>
+<org.eventb.core.constant name="_DiMy07MOEeWeFKteydocvQ" org.eventb.core.identifier="lights"/>
+<org.eventb.core.axiom name="_DiMy1LMOEeWeFKteydocvQ" org.eventb.core.label="axm0" org.eventb.core.predicate="platforms ⊆ℕ1×ℕ1"/>
+<org.eventb.core.axiom name="_aLukcLMOEeWeFKteydocvQ" org.eventb.core.label="axm1" org.eventb.core.predicate="lights ⊆ℕ1×ℕ1"/>
+<org.eventb.core.axiom name="_aLukcbMOEeWeFKteydocvQ" org.eventb.core.label="axm2" org.eventb.core.predicate="lights ⊆ platforms"/>
+<org.eventb.core.carrierSet name="_OMAYMLMQEeWeFKteydocvQ" org.eventb.core.comment="set for coordinates labels &quot;x&quot; and &quot;y&quot;" org.eventb.core.identifier="coord_lables"/>
+<org.eventb.core.constant name="_OMAYMbMQEeWeFKteydocvQ" org.eventb.core.identifier="x"/>
+<org.eventb.core.constant name="_OMAYMrMQEeWeFKteydocvQ" org.eventb.core.identifier="y"/>
+<org.eventb.core.axiom name="_OMAYM7MQEeWeFKteydocvQ" org.eventb.core.label="axm3" org.eventb.core.predicate="partition(coord_lables,{x},{y})"/>
+<org.eventb.core.axiom name="_pkVbQLMQEeWeFKteydocvQ" org.eventb.core.comment="this will simplfy the means of checking x and y coordinates (no use of dom/ran or any other operators that creates POs)" org.eventb.core.label="axm4" org.eventb.core.predicate="start_pos ∈ coord_lables → ℕ1"/>
+<org.eventb.core.axiom name="_4XMLkLMQEeWeFKteydocvQ" org.eventb.core.label="axm5" org.eventb.core.predicate="start_pos(x) ↦ start_pos(y) ∈ platforms"/>
+<org.eventb.core.carrierSet name="_7i4PALMREeWeFKteydocvQ" org.eventb.core.comment="set for direction lables &quot;N&quot;,&quot;O&quot;,&quot;S&quot; and &quot;W&quot;" org.eventb.core.identifier="dir_lables"/>
+<org.eventb.core.constant name="_7i4PAbMREeWeFKteydocvQ" org.eventb.core.identifier="N"/>
+<org.eventb.core.constant name="_7i4PArMREeWeFKteydocvQ" org.eventb.core.identifier="E"/>
+<org.eventb.core.constant name="_7i4PA7MREeWeFKteydocvQ" org.eventb.core.identifier="S"/>
+<org.eventb.core.constant name="_7i4PBLMREeWeFKteydocvQ" org.eventb.core.identifier="W"/>
+<org.eventb.core.axiom name="_7i4PBbMREeWeFKteydocvQ" org.eventb.core.label="axm6" org.eventb.core.predicate="partition(dir_lables,{N},{E},{S},{W})"/>
+<org.eventb.core.axiom name="_7i4PBrMREeWeFKteydocvQ" org.eventb.core.label="axm7" org.eventb.core.predicate="start_rot ∈ dir_lables"/>
+<org.eventb.core.constant name="_3dc1QLMSEeWeFKteydocvQ" org.eventb.core.comment="set that contains information on how to move based on the current direction" org.eventb.core.identifier="movement"/>
+<org.eventb.core.axiom name="_3dc1QbMSEeWeFKteydocvQ" org.eventb.core.comment="based on the current direction add values to current x,y position for moving" org.eventb.core.label="axm8" org.eventb.core.predicate="movement = {N↦{x↦0,y↦−1}, E↦{x↦1,y↦0}, S↦{x↦0,y↦1}, W↦{x↦−1,y↦0}}"/>
+<org.eventb.core.carrierSet name="_aT7D4LMeEeWeFKteydocvQ" org.eventb.core.comment="set for rotation labels &quot;left&quot; and &quot;right&quot;" org.eventb.core.identifier="rot_lables"/>
+<org.eventb.core.constant name="_aT7D4bMeEeWeFKteydocvQ" org.eventb.core.identifier="left"/>
+<org.eventb.core.axiom name="_aT7D4rMeEeWeFKteydocvQ" org.eventb.core.label="axm9" org.eventb.core.predicate="partition(rot_lables,{left},{right})"/>
+<org.eventb.core.constant name="_MAu1oLMfEeWeFKteydocvQ" org.eventb.core.identifier="right"/>
+<org.eventb.core.constant name="_MAu1obMfEeWeFKteydocvQ" org.eventb.core.comment="set that contains information on how to rorate based on the current direction" org.eventb.core.identifier="rotations"/>
+<org.eventb.core.axiom name="_MAu1orMfEeWeFKteydocvQ" org.eventb.core.label="axm10" org.eventb.core.predicate="rotations ={(N↦left)↦W,(N↦right)↦E,(E↦left)↦N,(E↦right)↦S,(S↦left)↦E,(S↦right)↦W,(W↦left)↦S,(W↦right)↦N}"/>
+</org.eventb.core.contextFile>
